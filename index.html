@@ -1,0 +1,46 @@
+<html>
+      <head>
+        <title> Dia 27 de Novembro </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href=""/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        
+
+    </head>
+    <body>
+        <div class="text-center mt-4 container col-sm-10 col-md-6">   
+            <h1>Digite a senha</h1>
+                
+                
+                <div class="form-floating mt-4" style="font-size: 15px">
+                    <input type="text" id="senha" name="senha" class="form-control" placeholder="12345">
+                    <label for="senha">Senha</label>
+                </div>
+                
+                <div class="mt-3">
+                    <input type="submit" value="Proximo" class="btn btn-primary btn-lg" onclick="redirecionar()">
+                </div>
+                
+                
+
+        </div>
+
+        <script>
+            function redirecionar(){
+                let senha = document.getElementById("senha");
+                if (senha.value == "27112003"){
+                    return window.location.replace("carol.html");
+                } else {
+                    return window.alert("Dica: É a data que nasceu a pessoa mais importante da minha vida" + senha);
+                }
+
+            }
+        </script>
+
+    </body>
+</html>
